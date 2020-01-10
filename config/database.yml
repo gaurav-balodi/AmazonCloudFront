@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  reconnect: true
+  pool: 5
+  username: <%= ENV['POSTGRES_USER'] || 'postgres' %>
+  password: <%= ENV['POSTGRES_PWD'] || 'postgres' %>
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: cloud_ops_dev
+
+test:
+  <<: *default
+  database: cloud_ops_test
+
+production:
+  <<: *default
+  database: cloud_ops_prod

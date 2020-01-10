@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  begin_range: 1
+  end_range: 1
+  unit: MyString
+  price_per_unit: 9.99
+  references: 
+
+two:
+  description: MyText
+  begin_range: 1
+  end_range: 1
+  unit: MyString
+  price_per_unit: 9.99
+  references: 
