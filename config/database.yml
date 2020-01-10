@@ -3,8 +3,8 @@ default: &default
   encoding: unicode
   reconnect: true
   pool: 5
-  username: <%= ENV['POSTGRES_USER'] || 'postgres' %>
-  password: <%= ENV['POSTGRES_PWD'] || 'postgres' %>
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PWD'] %>
   host: localhost
   port: 5432
 
